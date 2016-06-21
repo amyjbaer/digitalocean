@@ -22,7 +22,7 @@ $(document).ready(function() {
 		}
 	});
 	$('button:last').click(function() {
-		alert('you suck');
+		alert('hi');
 	});
 });
 </script>
@@ -30,7 +30,7 @@ $(document).ready(function() {
 <body>
 <h1>Amy's Website</h1>
 <button>Show Info</button>
-<button>Andrew click here</button>
+<button>Click Here</button>
 <?php 
 $servername = "104.236.198.230";
 $username = "amy";
