@@ -8,10 +8,9 @@
 <h1>Website</h1>
 <button>Push me!</button>
 <?php 
-$servername = "test";
+$servername = "104.236.198.230";
 $username = "Amy";
 $password = "ravens2013";
-$dbname = "user";
 $conn = new mysql_connect($servername, $username, $password);
 $sql = "SELECT * FROM user.user";
 $result = $conn->query($sql);
