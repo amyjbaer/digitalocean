@@ -21,10 +21,9 @@ $sql = "SELECT * FROM user.user";
 $result = $conn->query($sql);
 $arr = $result->fetchAll();
 foreach($arr as $row) {
-echo $row;
+echo $row['name'];
 
 } 
 ?>
-
 </body>
 </html>
