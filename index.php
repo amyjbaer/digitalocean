@@ -14,11 +14,11 @@ $(document).ready(function() {
 	$('button:first').click(function() {
 		if ($('p').css('display') == 'none') {
 			$('p').css('display', 'block');
-			$('button').html('Hide Info');
+			$('button:first').html('Hide Info');
 		}
 		else {
 			$('p').css('display', 'none');
-			$('button').html('Show Info');
+			$('button:first').html('Show Info');
 		}
 	});
 	$('button:last').click(function() {
