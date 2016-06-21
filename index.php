@@ -12,7 +12,7 @@ $servername = "104.236.198.230";
 $username = "Amy";
 $passwd = "password";
 try {
-$conn = new PDO("mysql:host=104.236.198.230:3306;dbname=user", $username, $passwd);
+$conn = new PDO("mysql:host=localhost;dbname=user", $username, $passwd);
 }
 catch(\Exception $e) {
 	echo $e->getMessage();
