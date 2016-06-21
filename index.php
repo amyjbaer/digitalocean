@@ -19,7 +19,7 @@ catch(\Exception $e) {
 }
 $sql = "SELECT * FROM user.user";
 $result = $conn->query($sql);
-var_dump($reuslt->fetchAll()); 
+var_dump($result->fetchAll()); 
 
 ?>
 </body>
