@@ -12,11 +12,11 @@ $servername = "test";
 $username = "Amy";
 $password = "ravens2013";
 $dbname = "user";
-$conn = new mysql($servername, $username, $password, $dbname);
-$sql = "SELECT * FROM user";
+$conn = new mysql_connect($servername, $username, $password);
+$sql = "SELECT * FROM user.user";
 $result = $conn->query($sql);
 echo $result;
-
+$conn->close();
 
 ?>
 </body>
