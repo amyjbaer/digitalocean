@@ -12,15 +12,22 @@ p {
 <script type="text/javascript">
 $(document).ready(function() {
 	$('button').click(function() {
-		$('p').css('display', 'block');
+		if ($('p').css('display') == 'none') {
+			$('p').css('display', 'block');
+			$('button').html('Hide Info');
+		}
+		else {
+			$('p').css('display', 'none');
+			$('button').html('Show Info');
+		}
 	});
 	
 });
 </script>
 </head>
 <body>
-<h1>Website</h1>
-<button>Push me to see everyone's names!</button>
+<h1>Amy's Website</h1>
+<button>Show Info</button>
 <?php 
 $servername = "104.236.198.230";
 $username = "amy";
@@ -37,7 +44,7 @@ $arr = $result->fetchAll();
 ?>
 
 <?php foreach($arr as $row ) {?>
-<p><?=$row['name']?></p>
+<p><?=$row['name']?> is <?=$row['age']?> years old and has a ID of <?=$row['user_id']?></p>
 <?php } ?>
 </body>
 </html>
