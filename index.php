@@ -13,9 +13,9 @@ $username = "Amy";
 $passwd = "password";
 $conn = new PDO("mysql:host=104.236.198.230:3306;dbname=user", $username, $passwd);
 echo $conn;
-/* $sql = "SELECT * FROM user.user";
+$sql = "SELECT * FROM user.user";
 $result = $conn->query($sql);
-var_dump($reuslt->fetchAll()); */
+var_dump($reuslt->fetchAll()); 
 
 ?>
 </body>
