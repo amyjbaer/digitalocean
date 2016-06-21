@@ -23,7 +23,7 @@ $arr = $result->fetchAll();
 foreach($arr as $row) {
 echo $row['name'];
 ?>
-<p><?=$row['name']?></p>
+<p><?php echo $row['name']?></p>
 
 <?} ?>
 </body>
