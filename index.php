@@ -22,8 +22,9 @@ $result = $conn->query($sql);
 $arr = $result->fetchAll();
 foreach($arr as $row) {
 echo $row['name'];
-
-} 
 ?>
+<p><?=$row['name']?></p>
+
+<?} ?>
 </body>
 </html>
