@@ -8,6 +8,8 @@
 <h1>Website</h1>
 <button>Push me!</button>
 <?php 
+echo '1';
+exit;
 $servername = "104.236.198.230";
 $username = "Amy";
 $passwd = "password";
