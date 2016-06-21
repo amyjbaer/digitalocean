@@ -9,7 +9,7 @@
 <button>Push me!</button>
 <?php 
 $servername = "104.236.198.230";
-$username = "Amy";
+$username = "amy";
 $passwd = "ravens2013";
 try {
 $conn = new PDO("mysql:host=localhost;dbname=user", $username, $passwd);
