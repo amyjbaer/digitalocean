@@ -23,7 +23,7 @@ $(document).ready(function() {
 	});
 	$('button:last').click(function() {
 		alert('you suck');
-	}
+	});
 });
 </script>
 </head>
