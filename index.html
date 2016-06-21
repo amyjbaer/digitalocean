@@ -7,5 +7,17 @@
 <body>
 <h1>Website</h1>
 <button>Push me!</button>
+<?php 
+$servername = "test";
+$username = "Amy";
+$password = "ravens2013";
+$dbname = "user";
+$conn = new mysql($servername, $username, $password, $dbname);
+$sql = "SELECT * FROM user";
+$result = $conn->query($sql);
+echo $result;
+
+
+?>
 </body>
 </html>
