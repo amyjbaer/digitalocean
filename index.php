@@ -21,6 +21,9 @@ $sql = "SELECT * FROM user.user";
 $result = $conn->query($sql);
 $arr = $result->fetchAll();
 ?>
-<p><?=$arr[0]['name']?></p>
+
+<? foreach($arr as $row ) {?>
+<p><?=$row['name']?></p>
+<? } ?>
 </body>
 </html>
