@@ -10,7 +10,7 @@
 <?php 
 $servername = "104.236.198.230";
 $username = "Amy";
-$passwd = "password";
+$passwd = "ravens2013";
 try {
 $conn = new PDO("mysql:host=localhost;dbname=user", $username, $passwd);
 }
