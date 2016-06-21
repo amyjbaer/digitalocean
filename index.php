@@ -20,11 +20,7 @@ catch(\Exception $e) {
 $sql = "SELECT * FROM user.user";
 $result = $conn->query($sql);
 $arr = $result->fetchAll();
-foreach($arr as $row) {
-echo $row['name'];
 ?>
-<p><?php echo $row['name']?></p>
-
-<?} ?>
+<p><?=$arr[0]['name']?></p>
 </body>
 </html>
