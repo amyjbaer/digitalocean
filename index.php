@@ -11,7 +11,7 @@ p {
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function() {
-	$('button').click(function() {
+	$('button:first').click(function() {
 		if ($('p').css('display') == 'none') {
 			$('p').css('display', 'block');
 			$('button').html('Hide Info');
@@ -21,13 +21,16 @@ $(document).ready(function() {
 			$('button').html('Show Info');
 		}
 	});
-	
+	$('button:last').click(function() {
+		alert('you suck');
+	}
 });
 </script>
 </head>
 <body>
 <h1>Amy's Website</h1>
 <button>Show Info</button>
+<button>Andrew click here</button>
 <?php 
 $servername = "104.236.198.230";
 $username = "amy";
