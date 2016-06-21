@@ -21,9 +21,8 @@ $sql = "SELECT * FROM user.user";
 $result = $conn->query($sql);
 $arr = $result->fetchAll();
 foreach($arr as $row) {
-?>
-<p><?=$row['name']?>'s user_id is <?=$row['user_id']?></p>
-<?
+echo $row;
+
 } 
 ?>
 
